@@ -3,14 +3,16 @@ import pandas as pd
 import numpy as np
 
 
-def column_eliminator(csv_filename: str, columns_to_save: list[str], replace_file: bool = True) -> None:
+def column_eliminator(csv_filename: str, columns_to_save: list[str], output_filename: str = "") -> None:
     print("Eliminador de columnas")
     # load csv
     df = pd.read_csv(csv_filename)
     # get columns to save
     df = df[columns_to_save]
     # save csv
-    if replace_file:
+    if output_filename:
+        df.to_csv(output_filename, index=False)
+    else: 
         df.to_csv(f"{csv_filename.split('.')[0]}_col.csv", index=False)
 
 

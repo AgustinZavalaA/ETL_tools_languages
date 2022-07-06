@@ -6,10 +6,6 @@
       {
         "file": "data/xd.csv",
         "args": ["Main Language (detailed) (QS204EW)", "Region", "Country"]
-      },
-      {
-        "file": "data/Australia 2011-2016.csv",
-        "args": ["Area", "idioma", "Numero_total"]
       }
     ],
 
