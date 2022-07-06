@@ -5,6 +5,7 @@ from eliminador_nulos import null_eliminator
 from eliminador_columnas import column_eliminator
 from eliminador_duplicados import duplicates_eliminator
 from cambiador_nombre_columna import column_name_changer
+from subir_database import upload_database
 
 
 def main(json_file) -> None:
@@ -39,6 +40,9 @@ def main(json_file) -> None:
             # no probado
             elif script == "cambiador_nombre_columna.py":
                 column_name_changer(file_args["file"], file_args["args"])
+
+            elif script == "subir_database.py":
+                upload_database(file_args["file"])
 
 
 if __name__ == "__main__":
