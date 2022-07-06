@@ -17,7 +17,7 @@
       {
         "file": "data/xd_col.csv",
         "args": ["check_negative", "check_empty_str", "check_null"]
-      },
+      }
     ],
 
     "eliminador_duplicados.py": [
