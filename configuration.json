@@ -1,0 +1,51 @@
+{
+  "database_name": "languages_db",
+
+  "scripts": {
+    "eliminador_columnas.py": [
+      {
+        "file": "data/xd.csv",
+        "args": ["Main Language (detailed) (QS204EW)", "Region", "Country"]
+      },
+      {
+        "file": "data/Australia 2011-2016.csv",
+        "args": ["Area", "idioma", "Numero_total"]
+      }
+    ],
+
+    "eliminador_nulos.py": [
+      {
+        "file": "data/xd_col.csv",
+        "args": ["check_negative", "check_empty_str", "check_null"]
+      },
+    ],
+
+    "eliminador_duplicados.py": [
+      {
+        "file": "data/xd_col_null.csv",
+        "args": ["select_random"]
+      }
+    ],
+
+    "cambiador_nombre_columna.py": [
+      {
+        "file": "data/xd_col_null_dup.csv",
+        "args": [
+          "Main Language (detailed) (QS204EW)",
+          "language",
+          "region",
+          "region"
+        ],
+        "country": "Australia",
+        "year": 2012
+      }
+    ],
+
+    "subir_database.py": [
+      {
+        "file": "data/xd_col_null_dup_name.csv",
+        "args": ["languages_db", "languages_db"]
+      }
+    ]
+  }
+}
