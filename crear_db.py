@@ -172,6 +172,39 @@ def upload_official_languages(csv_path: str, cur) -> None:
                 )
 
 
+def upload_speakers(folder_path: str, cur) -> None:
+    import os
+
+    for filepath in os.listdir(folder_path):
+        with open(f"{folder_path}/{filepath}") as f:
+            f.readline()
+            for line in f:
+                # llenar linea en speakers
+                if line.split(",")[1].strip() == "":
+                    continue
+                year = filepath.split(".")[0].split(" ")[-1]
+                native_speakers = int(float(line.split(",")[1].strip()))
+                total_speakers = int(float(line.split(",")[2].strip()))
+
+                language = line.split(",")[3].strip()
+
+                cur.execute(
+                    "INSERT INTO Speakers (year, native_speakers, total_speakers) VALUES (?, ?, ?)",
+                    (int(year), native_speakers, total_speakers),
+                )
+
+                s_id = cur.execute(
+                    "SELECT id FROM Speakers WHERE year = ? AND native_speakers = ?",
+                    (int(year), native_speakers),
+                ).fetchone()
+
+                # llenar linea en speakers_countries
+                cur.execute(
+                    "INSERT INTO Speakers_Countries (speaker_id, country_id) VALUES (?, ?)",
+                    (s_id[0], 1),
+                )
+
+
 def main() -> None:
     db_manager = "WorldLanguages.sqlite"
     db_conn = sqlite3.connect(db_manager, isolation_level=None)
@@ -188,6 +221,8 @@ def main() -> None:
     load_all_data("data_final", db_cur)
 
     upload_official_languages("db\Languages.txt", db_cur)
+
+    upload_speakers("db\speakers", db_cur)
 
     # show_db()
 
