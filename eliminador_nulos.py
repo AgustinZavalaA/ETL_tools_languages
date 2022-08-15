@@ -11,7 +11,7 @@ class NullCheckerType(enum.Enum):
     check_empty_str = "check_empty_str"
 
 
-def null_eliminator(csv_filename: str, types_to_check: list[str]) -> None:
+def null_eliminator(csv_filename: str, types_to_check: list[str], out_filename:str="") -> None:
     print("Eliminador de filas con valores nulos")
     # load csv
     df = pd.read_csv(csv_filename)
@@ -28,7 +28,10 @@ def null_eliminator(csv_filename: str, types_to_check: list[str]) -> None:
     # eliminate rows with null values
     df = df.dropna(axis=0, how="any")
     # save csv
-    df.to_csv(f"{csv_filename.split('.')[0]}_null.csv", index=False)
+    if out_filename:
+        df.to_csv(out_filename, index=False)
+    else:
+        df.to_csv(f"{csv_filename.split('.')[0]}_null.csv", index=False)
 
 
 if __name__ == "__main__":

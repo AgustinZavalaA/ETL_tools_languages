@@ -2,46 +2,232 @@
   "database_name": "languages_db",
 
   "scripts": {
-    "eliminador_columnas.py": [
-      {
-        "file": "data/xd.csv",
-        "args": ["Main Language (detailed) (QS204EW)", "Region", "Country"]
-      }
-    ],
-
     "eliminador_nulos.py": [
       {
-        "file": "data/xd_col.csv",
-        "args": ["check_negative", "check_empty_str", "check_null"]
+        "file": "data/Australia 2011-2016.csv",
+        "args": ["check_negative", "check_empty_str", "check_null"],
+        "out": "data/Australia_2001-2016_null.csv"
+      },
+      {
+        "file": "data/Italia 2012 - Hoja 1.csv",
+        "args": ["check_negative", "check_empty_str", "check_null"],
+        "out": "data/Italia_2012_null.csv"
+      },
+      {
+        "file": "data/Reino Unido 2008.csv",
+        "args": ["check_negative", "check_empty_str", "check_null"],
+        "out": "data/Reino_Unido_2008_null.csv" 
+      },
+      {
+        "file": "data/Reino Unido 2011.csv",
+        "args": ["check_negative", "check_empty_str", "check_null"],
+        "out": "data/Reino_Unido_2011_null.csv" 
+      },
+      {
+        "file": "data/Reino Unido 2013.csv",
+        "args": ["check_negative", "check_empty_str", "check_null"],
+        "out": "data/Reino_Unido_2013_null.csv" 
+      },
+      {
+        "file": "data/Census_Usually_resident_population_by_languages_spoken_2018 (1).csv",
+        "args": ["check_negative", "check_empty_str", "check_null"],
+        "out": "data/Population_2018_null.csv" 
+      },
+      {
+        "file": "data/population-by-mother-tongue-for-nepal-2011.csv",
+        "args": ["check_negative", "check_empty_str", "check_null"],
+        "out": "data/Population_nepal_2011_null.csv" 
       }
     ],
 
     "eliminador_duplicados.py": [
       {
-        "file": "data/xd_col_null.csv",
-        "args": ["select_random"]
+        "file": "data/Australia_2001-2016_null.csv",
+        "args": ["select_random"],
+        "out": "data/Australia_2001-2016_null_dup.csv"
+      },
+      {
+        "file": "data/Italia_2012_null.csv",
+        "args": ["select_random"],
+        "out": "data/Italia_2012_null_dup.csv"
+      },
+      {
+        "file": "data/Reino_Unido_2008_null.csv",
+        "args": ["select_random"],
+        "out": "data/Reino_Unido_2008_null_dup.csv" 
+      },
+      {
+        "file": "data/Reino_Unido_2011_null.csv",
+        "args": ["select_random"],
+        "out": "data/Reino_Unido_2011_null_dup.csv" 
+      },
+      {
+        "file": "data/Reino_Unido_2013_null.csv",
+        "args": ["select_random"],
+        "out": "data/Reino_Unido_2013_null_dup.csv" 
+      },
+      {
+        "file": "data/Population_2018_null.csv",
+        "args": ["select_random"],
+        "out": "data/Population_2018_null_dup.csv" 
+      },
+      {
+        "file": "data/Population_nepal_2011_null.csv",
+        "args": ["select_random"],
+        "out": "data/Population_nepal_2011_null_dup.csv" 
       }
     ],
 
     "cambiador_nombre_columna.py": [
       {
-        "file": "data/xd_col_null_dup.csv",
+        "file": "data/Australia_2001-2016_null_dup.csv",
         "args": [
-          "Main Language (detailed) (QS204EW)",
+          "Area",
+          "area",
+          "Data label",
           "language",
-          "region",
-          "region"
+          "2016",
+          "2016",
+          "2011",
+          "2011",
+          "2006",
+          "2006",
+          "2001",
+          "2001"
         ],
         "country": "Australia",
-        "year": 2012
+        "year": 2016,
+        "out": "data/Australia_2001-2016_null_dup_namecol.csv"
+      },
+      {
+        "file": "data/Italia_2012_null_dup.csv",
+        "args": [
+          "Territory",
+          "territory",
+          "Language",
+          "language",
+          "2012",
+          "2012"
+        ],
+        "country": "Italia",
+        "year": 2012,
+        "out": "data/Italia_2012_null_dup_namecol.csv"
+      },
+      {
+        "file": "data/Reino_Unido_2008_null_dup.csv",
+        "args": [
+          "Language",
+          "language"
+        ],
+        "country": "Reino Unido",
+        "year": 2008,
+        "out": "data/Reino_Unido_2008_null_dup_namecol.csv" 
+      },
+      {
+        "file": "data/Reino_Unido_2011_null_dup.csv",
+        "args": [
+          "Main Language",
+          "language"
+        ],
+        "country": "Reino Unido",
+        "year": 2011,
+        "out": "data/Reino_Unido_2011_null_dup_namecol.csv" 
+      },
+      {
+        "file": "data/Reino_Unido_2013_null_dup.csv",
+        "args": [
+          "Language",
+          "language",
+          "Speakers",
+          "speakers"
+        ],
+        "country": "Reino Unido",
+        "year": 2013,
+        "out": "data/Reino_Unido_2013_null_dup_namecol.csv" 
+      },
+      {
+        "file": "data/Population_2018_null_dup.csv",
+        "args": [
+          "Census Year",
+          "year",
+          "Language spoken",
+          "language",
+          "Value",
+          "value"
+        ],
+        "country": "New Zeleland",
+        "year": 2018,
+        "out": "data/Population_2018_null_dup_namecol.csv" 
+      },
+      {
+        "file": "data/Population_nepal_2011_null_dup.csv",
+        "args": [
+          "Mother Tongue",
+          "language",
+          "total",
+          "total"
+        ],
+        "country": "Nepal",
+        "year": 2011,
+        "out": "data/Population_nepal_2011_null_dup_namecol.csv" 
+      }
+
+    ],
+
+    "eliminador_columnas.py": [
+      {
+        "file": "data/Australia_2001-2016_null_dup_namecol.csv",
+        "args": ["area", "language", "2001"],
+        "out": "data/Australia_2001_null_dup_namecol_elim.csv"
+      },
+      {
+        "file": "data/Australia_2001-2016_null_dup_namecol.csv",
+        "args": ["area", "language", "2006"],
+        "out": "data/Australia_2006_null_dup_namecol_elim.csv"
+      },
+      {
+        "file": "data/Australia_2001-2016_null_dup_namecol.csv",
+        "args": ["area", "language", "2011"],
+        "out": "data/Australia_2011_null_dup_namecol_elim.csv"
+      },
+      {
+        "file": "data/Australia_2001-2016_null_dup_namecol.csv",
+        "args": ["area", "language", "2016"],
+        "out": "data/Australia_2016_null_dup_namecol_elim.csv"
+      },
+      {
+        "file": "data/Italia_2012_null_dup_namecol.csv",
+        "args": ["language", "2012"],
+        "out": "data/Italia_2012_null_dup_namecol_elim.csv"
+      },
+      {
+        "file": "data/Reino_Unido_2008_null_dup_namecol.csv",
+        "args": ["Greater London", "language"],
+        "out": "data/Reino_Unido_2008_null_dup_namecol_elim.csv" 
+      },
+      {
+        "file": "data/Reino_Unido_2011_null_dup_namecol.csv",
+        "args": ["language", "England and Wales"],
+        "out": "data/ Reino_Unido_2011_null_dup_namecol_elim.csv" 
+      },
+      {
+        "file": "data/Reino_Unido_2013_null_dup_namecol.csv",
+        "args": ["language", "speakers"],
+        "out": "data/ Reino_Unido_2013_null_dup_namecol_elim.csv" 
+      },
+      {
+        "file": "data/Population_2018_null_dup_namecol.csv",
+        "args": ["language", "value"],
+        "out": "data/Population_2018_null_dup_namecol_elim.csv" 
+      },
+      {
+        "file": "data/population_nepal_2011_null_dup_namecol.csv",
+        "args": ["language", "total"],
+        "out": "data/population_nepal_2011_null_dup_namecol_elim.csv" 
       }
     ],
 
     "subir_database.py": [
-      {
-        "file": "data/xd_col_null_dup_name.csv",
-        "args": ["languages_db", "languages_db"]
-      }
     ]
   }
 }

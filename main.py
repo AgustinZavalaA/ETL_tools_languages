@@ -26,20 +26,34 @@ def main(json_file) -> None:
 
             if script == "eliminador_columnas.py":
                 if "out" in file_args.keys():
-                    column_eliminator(file_args["file"], file_args["args"], file_args["out"])
+                    print(file_args["out"])
+                    column_eliminator(
+                        file_args["file"], file_args["args"], file_args["out"]
+                    )
                 else:
                     column_eliminator(file_args["file"], file_args["args"])
             elif script == "eliminador_nulos.py":
-                null_eliminator(file_args["file"], file_args["args"])
+                null_eliminator(file_args["file"], file_args["args"], file_args["out"])
             elif script == "eliminador_duplicados.py":
                 if "cols" in file_args.keys():
-                    duplicates_eliminator(file_args["file"], file_args["args"], file_args["cols"])
+                    duplicates_eliminator(
+                        file_args["file"],
+                        file_args["args"],
+                        file_args["cols"],
+                        file_args["out"],
+                    )
                 else:
-                    duplicates_eliminator(file_args["file"], file_args["args"])
+                    duplicates_eliminator(
+                        file_args["file"], file_args["args"], file_args["out"]
+                    )
 
             # no probado
             elif script == "cambiador_nombre_columna.py":
-                column_name_changer(file_args["file"], file_args["args"])
+                print(file_args["args"])
+                print(file_args["out"])
+                column_name_changer(
+                    file_args["file"], file_args["args"], file_args["out"]
+                )
 
             elif script == "subir_database.py":
                 upload_database(file_args["file"])
