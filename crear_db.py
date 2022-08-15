@@ -150,6 +150,28 @@ def load_datafile(filepath: str):
     return pd.read_csv(filepath, header=None, names=["name", "year", "speakers"])
 
 
+def upload_official_languages(csv_path: str, cur) -> None:
+    lines = []
+    with open(csv_path, "r") as f:
+        for line in f:
+            lines.append(line.strip())
+
+    for line in lines:
+        c_id = cur.execute(
+            "SELECT id FROM Countries WHERE name = ?", (line.split(",")[0].strip(),)
+        ).fetchone()
+
+        for i in line.split(",")[1:]:
+            l_id = cur.execute(
+                "SELECT id FROM Languages WHERE name = ?", (i.strip(),)
+            ).fetchone()
+            if c_id and l_id:
+                cur.execute(
+                    "INSERT INTO Official_Languages (country_id, language_id) VALUES (?, ?)",
+                    (c_id[0], l_id[0]),
+                )
+
+
 def main() -> None:
     db_manager = "WorldLanguages.sqlite"
     db_conn = sqlite3.connect(db_manager, isolation_level=None)
@@ -164,6 +186,8 @@ def main() -> None:
     upload_regions("db\\regions_countries.csv", db_cur)
 
     load_all_data("data_final", db_cur)
+
+    upload_official_languages("db\Languages.txt", db_cur)
 
     # show_db()
 

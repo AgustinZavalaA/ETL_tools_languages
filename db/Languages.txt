@@ -1,0 +1,192 @@
+Afghanistan,Pashto, Dari
+Albania,Albanian
+Algeria,Arabic,Tamazight
+Andorra,Catalan
+Aongola,Portuguese
+Antigua,English
+Barbuda,English 
+Argentina,Spanish
+Armenia,Armenian
+Australia,English
+Austria,German
+Azerbaijan,Azerbaijani
+Bahamas,English
+Bahrain,Arabic
+Bangladesh,Bengali
+Barbados,English
+Belarus,Belarusian, Russian
+Belgium,Dutch, French, German
+Belize,English
+Benin,French
+Bhutan,Dzongkha
+Bolivia,Castilian
+Bosnia,Bosnian , Croatian , Serbian 
+Botswana,English, Tswana
+Brazil,Portuguese
+Brunei Darussalam,Malay, English
+Bulgaria,Bulgarian
+Burkina Faso,French
+Burundi,French, Kirundi, English
+Cabo Verde,Portuguese
+Cambodia,Khmer
+Cameroon,English
+Canada,French
+Central African Republic,French
+Chad,Arabic, French
+Chile,Spanish 
+China,Mandarin Chinese
+Colombia,Spanish
+Comoros,Arabic, Comorian, French
+Congo,French
+Costa Rica,Spanish
+Côte D’Ivoire,French
+Croatia,Croatian
+Cuba,Spanish
+Cyprus,Greek, Turkish
+Czech Republic,Czech, Slovak
+Denmark,Danish
+Djibouti,Arabic, French
+Dominica,English
+Dominican Republic,Spanish
+Ecuador,Spanish, Quechua
+Egypt,Arabic
+El Salvador,Spanish
+Equatorial Guinea,French, Portuguese, Spanish
+Eritrea,Tigrinya
+Estonia,Estonian
+Eswatini,English, Swazi
+Ethiopia,Afar, Amharic, Oromo, Somali, Tigrinya, English
+Fiji,English, Fijian, Fiji Hindi
+Finland,Finnish, Swedish
+France,French
+Gabon,French
+Gambia,English
+Georgia,Georgian
+Germany,German
+Ghana,English
+Greece,Greek
+Grenada,English
+Guatemala,Spanish
+Guinea,French
+Guinea Bissau,Portuguese
+Guyana,English
+Haiti,French, Haitian Creole
+Honduras,Spanish
+Hungary,Hungarian
+Iceland,Icelandic, Icelandic Sign Language
+India,Hindi, English
+Indonesia,Indonesian, Javanese
+Iran,Persian
+Iraq,Arabic
+Ireland,English, Irish
+Israel,Hebrew
+Italy,Italian
+Jamaica,English
+Japan,Japanese
+Jordan,Arabic
+Kazakhstan,Kazakh, Russian
+Kenya,English
+Kiribati,English
+Kuwait,Standard Arabic
+Kyrgyzstan,Kyrgyz, Russian
+Lao,Lao
+Latvia,Latvian
+Lebanon,Arabic
+Lesotho,Sotho, English
+Liberia,English
+Libya,Arabic
+Liechtenstein,German
+Lithuania,Lithuanian
+Luxembourg,French, German, Luxembourgish
+Madagascar,French, Malagasy
+Malawi,English, Chichewa
+Malaysia,Malay, English
+Maldives,Dhivehi
+Mali,French
+Malta,Maltese, English
+Marshall Islands,English
+Mauritania,Arabic
+Mauritius,English
+Mexico,Spanish 
+Micronesia,Woleaian
+Monaco,French
+Mongolia,Mongolian
+Montenegro,Albanian,Croatian,Serbian
+Morocco,Arabic, Tamazight
+Mozambique,Portuguese
+Myanmar,Burmese
+Namibia,English
+Nauru,English, Nauruan
+Nepal,Nepali
+Netherlands,Dutch,West Frisian
+New Zealand,English, Maori, New Zealand Sign Language
+Nicaragua,Spanish
+Niger,French
+Nigeria,English
+North Macedonia,Macedonian, Albanian
+Norway,Norwegian, Sami
+Oman,Arabic
+Pakistan,English, Urdu
+Palau,English, Palauan
+Panama,Spanish
+Papua New Guinea,English, Hiri Motu, PNG Sign Language, Tok Pisin
+Paraguay,Spanish, Guaraní
+Peru,Spanish, Aymara, Quechua
+Philippines,English, Filipino, Filipino Sign Language
+Poland,Polish
+Portugal,Portuguese
+Qatar,Arabic
+Republic of Korea,Korean, Korean Sign Language
+Republic of Moldova,Romanian
+Romania,Romanian
+Russian Federation,Russian
+Rwanda,English, French, Kinyarwanda, Swahili
+Saint Kitts and Nevis,English
+Saint Lucia,English
+Saint Vincent and the Grenadines,English
+Samoa,English
+San Marino,Italian
+Sao Tome and Principe,Portuguese
+Saudi Arabia,Arabic
+Senegal,French
+Serbia,Serbian
+Seychelles,English, French, Seychellois Creole
+Sierra Leone,English
+Singapore,English, Malay, Mandarin Chinese,Tamil
+Slovakia,Slovak
+Slovenia,Slovene
+Solomon Islands,English
+Somalia,Arabic
+South Africa,Afrikaans, English, Southern Ndebele, Sotho, Northern Sotho, Swazi, Tsonga, Tswana, Venda, Xhosa, Zulu
+South Sudan,English
+Spain,Spanish
+Sri Lanka,Sinhala, Tamil
+Sudan,Arabic, English
+Suriname,Dutch
+Sweden,Swedish
+Switzerland,French, German, Italian, Romansh
+Syrian Arab Republic,Arabic
+Tajikistan,Tajik
+Thailand,Thai
+Timor-Leste,Portuguese, Tetum
+Togo,French
+Tonga,English, Tongan
+Trinidad and Tobago,English
+Tunisia,Tunisian, Arabic, French
+Turkey,Turkish
+Turkmenistan,Turkmen
+Tuvalu,English 
+Uganda,English, Swahili
+Ukraine,Ukrainian
+United Arab Emirates,Arabic
+United Kingdom,English 
+United Republic of Tanzania,English
+United States of America,English
+Uruguay,Spanish 
+Uzbekistan,Uzbek
+Vanuatu,English, French
+Venezuela,Italian
+Vietnam,Vietnamese
+Yemen,Arabic
+Zambia,English
+Zimbabwe,Chewa, Chibarwe, English, Kalanga, Khoisan, Nambya, Ndau, Ndebele, Shangani, Shona, Zimbabwean sign languages, Sotho, Tonga, Tswana, Venda, Xhosa
